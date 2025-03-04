@@ -15,8 +15,7 @@ import time
 app = Flask(__name__)
 app.secret_key = "21pa1a1286@2025"
 
-myclient = MongoClient("mongodb+srv://21pa1a1286:charishma@cluster0.nsdecj7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-
+myclient = MongoClient("mongodb+srv://Charishmapaluri:21pa1a1286@cluster0.nsdecj7.mongodb.net/")
 #Patient db
 patientdb = myclient["MediFace"]
 patientcol = patientdb["patient-details"]
